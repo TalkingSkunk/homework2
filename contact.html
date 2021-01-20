@@ -1,97 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TalkingSkunk-Contact</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <style>
-      .header {
-        overflow: hidden;
-        position: sticky;
-        top:0;
-        position: -webkit-sticky;
-      }
-      .footer {
-        position: sticky;
-        position: -webkit-sticky;
-        bottom: 0;
-      }
-      main {
-        padding-bottom: 2000px;
-      }
-    </style>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalkingSkunk-Contact</title>
+
+  <!-- These two are from Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <style>
+    /* This sticks the navbar to the top. */
+    .header {
+      overflow: hidden;
+      position: sticky;
+      top: 0;
+      position: -webkit-sticky;
+    }
+
+    /* This sticks the footer to the bottom. */
+    .footer {
+      position: sticky;
+      position: -webkit-sticky;
+      bottom: 0;
+    }
+
+    main {
+      padding-bottom: 2000px;
+    }
+
+    /* This is the background image and font color inside the Body. */
+    body {
+      background-image: url("./assets/images/bg3.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      z-index: 0;
+    }
+  </style>
+
 </head>
 
 <body>
-    <header class="header">
 
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark me-sm-0">
-            <div class="container-fluid">
-              <a class="navbar-brand">Sam Kim</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item me-2">
-                    <a class="nav-link active" aria-current="page" href="./index.html">About</a>
-                  </li>
-                  <li class="nav-item me-2">
-                    <a class="nav-link active" aria-current="page" href="./portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+  <!-- Header contains the navbar only. -->
+  <header class="header">
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark me-sm-0">
+      <div class="container-fluid">
+        <a class="navbar-brand">Sam Kim</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-2">
+              <a class="nav-link active" aria-current="page" href="./index.html">About</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link active" aria-current="page" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="mt-5">
+    <form>
+      <div class="container mt-2">
+        <h1>You can get in contact with me here....</h1>
+
+        <!-- There is only one row with 2 responsive columns. -->
+        <div class="row">
+
+          <div class="col-12 col-md-6">
+
+            <div class="form-group mb-3">
+              <label for="usr">Name (Required)</label>
+              <input type="text" class="form-control" id="usr" placeholder="Your name">
             </div>
-        </nav>
-
-    </header>
-    <main>
-        <form>
-            <div class="container mt-2">
-                <h1>You can get in contact with me here....</h1>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="form-group mb-3">
-                            <label for="usr">Name (Required)</label>
-                            <input type="text" class="form-control" id="usr" placeholder="Your name">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">E-Mail Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@address.com">
-                        </div>
-                        
-                    </div>
-                
-                    <div class="col-12 col-md-6">
-                        <div class="form-group mb-2">
-                            <label for="exampleFormControlTextarea1">Comments (Required)</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Questions? Comments? Rude Remarks?"></textarea>
-                        </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">I want to reach Sam Kim!</label>
-                    </div>
-                    <div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                    </div>
-                </div>
+            <div class="form-group mb-3">
+              <label for="email">E-Mail Address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@address.com">
             </div>
-        </form>
 
-    </main>
-    <footer class="mt-auto text-white-50 bg-dark footer">
-        <p>Copyright 2021 Sam Kim. All Rights Reserved. <a href="https://github.com/TalkingSkunk" class="text-white">GitHub</a><a href="https://www.linkedin.com/in/sam-k-14099a95/" class="text-white">LinkedIn</a></p>
-    </footer>
+          </div>
+
+          <div class="col-12 col-md-6">
+
+            <div class="form-group mb-2">
+              <label for="exampleFormControlTextarea1">Comments (Required)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Questions? Comments? Rude Remarks?"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I want to reach Sam Kim!</label>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </form>
+
+  </main>
+
+  <footer class="mt-auto text-white-50 bg-dark footer">
+
+    <p>Copyright 2021 Sam Kim. All Rights Reserved. <a href="https://github.com/TalkingSkunk"
+        class="text-white">GitHub</a><a href="https://www.linkedin.com/in/sam-k-14099a95/"
+        class="text-white">LinkedIn</a></p>
+
+  </footer>
 
 </body>
+
 </html>
