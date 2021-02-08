@@ -1,10 +1,10 @@
 # Homework2 (Due Week 2)
 
 **Deployed application URL**
-https://talkingskunk.github.io/homework2/
+https://talkingskunk.github.io/portfolio
 
 **GitHub Repository URL**
-https://github.com/TalkingSkunk/homework2
+https://github.com/TalkingSkunk/portfolio
 
 
 ## Table of Contents
