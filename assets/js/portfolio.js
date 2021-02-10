@@ -1,3 +1,4 @@
+// objects for project info for each article
 const myProjects = [
     {
         projectImageUrl: "https://talkingskunk.github.io/homework6-weatherDashboard/",
@@ -5,8 +6,8 @@ const myProjects = [
         projectImageAlt: "Project screenshot",
         projectName: "Current-Weather Dashboard",
         projectDetails: "As a regular traveller, you would like to know what the weather is like at your destination; so you want a reliable, real-time weather information.",
-        projectFeatures: ['Search your destination','Store your searched places','See detailed forecast info'],
-        projectTools: ['HTML/CSS','BS','JS','API'],
+        projectFeatures: ['Search your destination', 'Store your searched places', 'See detailed forecast info'],
+        projectTools: ['HTML/CSS', 'BS', 'JS', 'API'],
         projectGithub: "https://github.com/TalkingSkunk/homework6-weatherDashboard"
     },
     {
@@ -15,8 +16,8 @@ const myProjects = [
         projectImageAlt: "Project screenshot",
         projectName: "Day Planner",
         projectDetails: "As a daily worker, you need to manage your time; so you want a personal daily schedule that you can access easily.",
-        projectFeatures: ['See changing color for current hour','Save your schedule info','See current date'],
-        projectTools: ['HTML/CSS','BS','JS','jQuery'],
+        projectFeatures: ['See changing color for current hour', 'Save your schedule info', 'See current date'],
+        projectTools: ['HTML/CSS', 'BS', 'JS', 'jQuery'],
         projectGithub: ""
     },
     {
@@ -25,7 +26,7 @@ const myProjects = [
         projectImageAlt: "Project screenshot",
         projectName: "Random Password Generator",
         projectDetails: "As a regular Web user, you need to secure your Web accounts; so you want a random and complex password combination.",
-        projectFeatures: ['Choose desired character types','Generate a random password'],
+        projectFeatures: ['Choose desired character types', 'Generate a random password'],
         projectTools: ["JS"],
         projectGithub: ""
     },
@@ -41,11 +42,11 @@ const myProjects = [
     }
 ]
 
-for (let i = 0; i < myProjects.length-1; i++) {
-   
+
+for (let i = 0; i < myProjects.length - 1; i++) {
     // HTML article template to populate #projectSection @line 52
     document.querySelector('#projectSection').innerHTML +=
-    `<article class="outline mb-3">
+        `<article class="outline mb-3">
         <div class="row bg">
             <div class="col-12 col-md-3">
                 <a href="${myProjects[i].projectImageUrl}" target="_blank">
@@ -82,18 +83,18 @@ for (let i = 0; i < myProjects.length-1; i++) {
         </div>
     </article>`;
 
-    
+    // projectFeatures array loop
     let featuresArray = myProjects[i].projectFeatures;
-    for (let a=0; a < featuresArray.length; a++){
+    for (let a = 0; a < featuresArray.length; a++) {
         let list = document.createElement('LI');
         let listItem = document.createTextNode(`${featuresArray[a]}`);
         list.appendChild(listItem);
         document.querySelector(`#dropdownContent1${i}`).appendChild(list);
         console.log(list)
     }
-    
+    // projectTools array loop
     let toolsArray = myProjects[i].projectTools;
-    for (let b=0; b < toolsArray.length; b++){
+    for (let b = 0; b < toolsArray.length; b++) {
         list2 = document.createElement('LI');
         let listItem2 = document.createTextNode(`${toolsArray[b]}`);
         list2.appendChild(listItem2);

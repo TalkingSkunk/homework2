@@ -42,6 +42,7 @@ img:hover {
 }
 
 /* dropdown lists start upon hover  */
+/* the dropdown top text */
 #dropdown10, #dropdown20 {
     background-color: #666666;
     color: white;
@@ -49,10 +50,12 @@ img:hover {
     border: none;
     border-radius: 10px;
 }
+/* the dropdown div */
 #dropdown1, #dropdown2 {
 position: relative;
 display: inline;
 }
+/* the dropdown inner lists */
 .dropdownContent1, .dropdownContent2 {
 display: none;
 position: absolute;
@@ -68,6 +71,7 @@ padding: 12px 16px; /* top & bottom, then right & left */
 text-decoration: none;
 display: block;
 }
+/* when hovering over dropdown divs...drop down inner lists */
 #dropdown1:hover .dropdownContent1 {display: block;}
 #dropdown2:hover .dropdownContent2 {display: block;}
 
