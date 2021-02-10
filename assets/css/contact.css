@@ -1,0 +1,28 @@
+/* This sticks the navbar to the top. */
+.header {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+}
+
+/* This sticks the footer to the bottom. */
+.footer {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+}
+
+main {
+    padding-bottom: 2000px;
+}
+
+/* This is the background image and font color inside the Body. */
+body {
+    background-image: url("../images/bg3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    z-index: 0;
+}

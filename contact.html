@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TalkingSkunk-Contact</title>
@@ -14,39 +13,8 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
   <!-- This is the external JS. -->
-  <script src="./assets/js/contactJS.js" defer></script>
-
-  <style>
-    /* This sticks the navbar to the top. */
-    .header {
-      overflow: hidden;
-      position: sticky;
-      top: 0;
-      position: -webkit-sticky;
-    }
-
-    /* This sticks the footer to the bottom. */
-    .footer {
-      position: sticky;
-      position: -webkit-sticky;
-      bottom: 0;
-    }
-
-    main {
-      padding-bottom: 2000px;
-    }
-
-    /* This is the background image and font color inside the Body. */
-    body {
-      background-image: url("./assets/images/bg3.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      color: white;
-      z-index: 0;
-    }
-  </style>
-
+  <script src="./assets/js/contact.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="./assets/css/contact.css">
 </head>
 
 <body>
@@ -131,11 +99,7 @@
   </main>
 
   <footer class="mt-auto text-white-50 bg-dark footer">
-
-    <p>Copyright 2021 Sam Kim. All Rights Reserved. <a href="https://github.com/TalkingSkunk"
-        class="text-white">GitHub</a>&nbsp;<a href="https://www.linkedin.com/in/sam-k-14099a95/"
-        class="text-white">LinkedIn</a></p>
-
+    <p id="footerP"></p>
   </footer>
 
 </body>

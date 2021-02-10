@@ -1,0 +1,61 @@
+/* This sticks the navbar to the top. */
+.header {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    z-index: 1;
+}
+
+/* This sticks the footer to the bottom. */
+.footer {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+}
+
+main {
+    padding-bottom: 2000px;
+}
+
+/* This is the background image only. */
+body {
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/* This import is from (fonts.google.com). */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* This is the section's font. */
+article {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    color: black;
+    font-family: 'Oswald', sans-serif, "Times New Roman";
+    text-align: left;
+    font-weight: bold;
+    padding: 7px;
+    font-size: 20px;
+    /* text shadow 1 px to the right, bottom */
+    text-shadow: 1px 0 rgb(194, 175, 175), 0 -1px rgb(194, 175, 175); /*horizontal, verical offset, blur-radius, color*/
+    font-size: 22px;
+}
+
+/* This is the background color of the section. */
+.bg::after {
+    content: "";
+    opacity: 0.3;
+    background-color: white;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}

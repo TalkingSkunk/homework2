@@ -11,79 +11,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
-
-  <style>
-    /* This sticks the navbar to the top. */
-    .header {
-      overflow: hidden;
-      position: sticky;
-      top: 0;
-      position: -webkit-sticky;
-      z-index: 1;
-    }
-
-    /* This sticks the footer to the bottom. */
-    .footer {
-      position: sticky;
-      position: -webkit-sticky;
-      bottom: 0;
-    }
-
-    main {
-      padding-bottom: 2000px;
-    }
-
-    .outline {
-      border: 2px solid black;
-    }
-
-    /* This is the image of each article item. */
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 20px;
-      padding: 10px;
-    }
-
-    /* This is the background image only. */
-    body {
-      background-image: url("./assets/images/bg2.jpg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
-
-    /* This import is from (fonts.google.com). */
-    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
-    /* This is the article's font. */
-    article {
-      width: 100%;
-      height: auto;
-      display: block;
-      position: relative;
-      color: black;
-      font-family: 'Oswald', sans-serif, "Times New Roman";
-      text-align: left;
-      font-weight: bold;
-      padding: 7px;
-      font-size: 20px;
-    }
-
-    /* This is the article's background. */
-    .bg::after {
-      content: "";
-      opacity: 0.8;
-      background-color: white;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-    }
-  </style>
+  <script src="./assets/js/portfolio.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="./assets/css/portfolio.css">
 </head>
 
 <body>
@@ -119,120 +48,14 @@
 
   <main class="mt-5">
     <!-- Each article contains one row, with 2 columns, with 2 sub-rows. -->
-    <section class="container">
-
-      <article class="outline mb-3">
-        <div class="row bg">
-          <div class="col-12 col-md-4">
-            <img src="./assets/images/poodlemoth.jpg" alt="Bug Tracker screenshot" />
-          </div>
-          <div class="col-12 col-md-8">
-            <div class="row">
-              <div class="col-md-12">
-                <h2>Bug Tracker</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolorem non delectus porro atque, odio
-                  provident culpa iure ducimus debitis, sint quae at iusto adipisci cupiditate rem eius vero et.</p>
-              </div>
-              <div class="col-12 col-md-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corporis alias omnis debitis expedita
-                  voluptatibus sint, accusamus nulla dolorem quidem temporibus repudiandae maiores quasi doloribus
-                  architecto quis dolor quo cupiditate.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-
-      <article class="outline mb-3">
-        <div class="row bg">
-          <div class="col-12 col-md-4">
-            <img src="./assets/images/poodlemoth.jpg" alt="Bug Tracker screenshot" />
-          </div>
-          <div class="col-12 col-md-8">
-            <div class="row">
-              <div class="col-md-12">
-                <h2>Bug Tracker</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolorem non delectus porro atque, odio
-                  provident culpa iure ducimus debitis, sint quae at iusto adipisci cupiditate rem eius vero et.</p>
-              </div>
-              <div class="col-12 col-md-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corporis alias omnis debitis expedita
-                  voluptatibus sint, accusamus nulla dolorem quidem temporibus repudiandae maiores quasi doloribus
-                  architecto quis dolor quo cupiditate.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="outline mb-3">
-        <div class="row bg">
-          <div class="col-12 col-md-4">
-            <img src="./assets/images/poodlemoth.jpg" alt="Bug Tracker screenshot" />
-          </div>
-          <div class="col-12 col-md-8">
-            <div class="row">
-              <div class="col-md-12">
-                <h2>Bug Tracker</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolorem non delectus porro atque, odio
-                  provident culpa iure ducimus debitis, sint quae at iusto adipisci cupiditate rem eius vero et.</p>
-              </div>
-              <div class="col-12 col-md-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corporis alias omnis debitis expedita
-                  voluptatibus sint, accusamus nulla dolorem quidem temporibus repudiandae maiores quasi doloribus
-                  architecto quis dolor quo cupiditate.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="outline mb-3">
-        <div class="row bg">
-          <div class="col-12 col-md-4">
-            <img src="./assets/images/poodlemoth.jpg" alt="Bug Tracker screenshot" />
-          </div>
-          <div class="col-12 col-md-8">
-            <div class="row">
-              <div class="col-md-12">
-                <h2>Bug Tracker</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolorem non delectus porro atque, odio
-                  provident culpa iure ducimus debitis, sint quae at iusto adipisci cupiditate rem eius vero et.</p>
-              </div>
-              <div class="col-12 col-md-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corporis alias omnis debitis expedita
-                  voluptatibus sint, accusamus nulla dolorem quidem temporibus repudiandae maiores quasi doloribus
-                  architecto quis dolor quo cupiditate.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+    <section id ="projectSection" class="container">
+    <!-- This is where each project article populates from JS. -->
     </section>
 
   </main>
 
   <footer class="mt-auto text-white-50 bg-dark footer">
-    <p>Copyright 2021 Sam Kim. All Rights Reserved. <a href="https://github.com/TalkingSkunk"
-        class="text-white">GitHub</a>&nbsp;<a href="https://www.linkedin.com/in/sam-k-14099a95/"
-        class="text-white">LinkedIn</a></p>
+    <p id="footerP"></p>
   </footer>
 
 </body>
