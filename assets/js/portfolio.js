@@ -90,7 +90,7 @@ for (let i = 0; i < myProjects.length - 1; i++) {
         let listItem = document.createTextNode(`${featuresArray[a]}`);
         list.appendChild(listItem);
         document.querySelector(`#dropdownContent1${i}`).appendChild(list);
-        console.log(list)
+        console.log(`[projectFeatures${i}]`, list)
     }
     // projectTools array loop
     let toolsArray = myProjects[i].projectTools;
@@ -99,6 +99,7 @@ for (let i = 0; i < myProjects.length - 1; i++) {
         let listItem2 = document.createTextNode(`${toolsArray[b]}`);
         list2.appendChild(listItem2);
         document.querySelector(`#dropdownContent2${i}`).appendChild(list2);
+        console.log{`projectsTools${i}`, list2};
     }
 }
 
