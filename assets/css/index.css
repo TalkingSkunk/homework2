@@ -43,7 +43,7 @@ article {
     padding: 7px;
     font-size: 20px;
     /* text shadow 1 px to the right, bottom */
-    text-shadow: 1px 0 rgb(194, 175, 175), 0 -1px rgb(194, 175, 175); /*horizontal, verical offset, blur-radius, color*/
+    text-shadow: 1px 0 3px rgb(194, 175, 175), 0 -1px 3px rgb(194, 175, 175); /*horizontal, vertical offset, blur-radius, color*/
     font-size: 22px;
 }
 
