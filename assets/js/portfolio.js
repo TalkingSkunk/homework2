@@ -55,7 +55,7 @@ for (let i = 0; i < myProjects.length - 1; i++) {
             </div>
             <div class="col-12 col-md-9">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-12">
                         <h2 style="text-decoration: underline;">${myProjects[i].projectName}</h2>
                     </div>
                 </div>
