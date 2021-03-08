@@ -27,10 +27,11 @@ main {
 
 
 /* This is the image of each article item. */
-img {
+#projectImage {
     position: relative; /* make image overlap other elements once hover */
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
     border-radius: 20px;
     padding: 0 0 0 0; /* top right bottom left */
     margin-left: auto;
@@ -40,9 +41,11 @@ img {
 }
 /* projectImages are made larger and more opaque upon hover*/
 #projectImage {transition-timing-function: ease;}
-img:hover {
-    width: 120%;
-    opacity: 1;    
+#projectImage:hover {
+    width: 110%;
+    height: auto;
+    opacity: 1;   
+    object-fit: cover; 
 }
 
 
@@ -111,4 +114,13 @@ article {
     right: 0;
     position: absolute;
     z-index: -1;
+}
+
+/* Features and Tools list */
+#dropdown10, #dropdown20 {
+    float: right;
+}
+
+#featuresTools {
+    padding-right: 250px;
 }

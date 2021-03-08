@@ -1,11 +1,31 @@
 // objects for project info for each article
 const myProjects = [
     {
+        projectImageUrl: "https://github.com/TalkingSkunk/HW10-EmployeeTracker",
+        projectImage: "./assets/images/portfolio/hw10.png",
+        projectImageAlt: "Project screenshot",
+        projectName: "Employee Tracker",
+        projectDetails: "As a HR admin,<br/>You need to keep track of all employees,<br/>So you need a SQL database.",
+        projectFeatures: ['Input validation','Add/Edit/Delete','Easy to use'],
+        projectTools: ['JS','NodeJS', 'SQL'],
+        projectGithub: "https://github.com/TalkingSkunk/HW10-EmployeeTracker"
+    },
+    {
+        projectImageUrl: "https://github.com/TalkingSkunk/Homework8-ProfileMaker",
+        projectImage: "./assets/images/portfolio/hw8.png",
+        projectImageAlt: "Project screenshot",
+        projectName: "Profile Maker",
+        projectDetails: "As an Employee,<br/>You need to keep track of your team,<br/>So you need a team profile maker.",
+        projectFeatures: ['Input validation','Color-distinct roles','Easy to use'],
+        projectTools: ['HTML/CSS','JS','NodeJS'],
+        projectGithub: "https://github.com/TalkingSkunk/Homework8-ProfileMaker"
+    },
+    {
         projectImageUrl: "https://talkingskunk.github.io/homework6-weatherDashboard/",
         projectImage: "./assets/images/portfolio/projectWeather.png",
         projectImageAlt: "Project screenshot",
         projectName: "Current-Weather Dashboard",
-        projectDetails: "As a regular traveller, you would like to know what the weather is like at your destination; so you want a reliable, real-time weather information.",
+        projectDetails: "As a regular traveller,<br/>You want to see the weather at destination,<br/>So you want a reliable, real-time weather information.",
         projectFeatures: ['Search your destination', 'Store your searched places', 'See detailed forecast info'],
         projectTools: ['HTML/CSS', 'BS', 'JS', 'API'],
         projectGithub: "https://github.com/TalkingSkunk/homework6-weatherDashboard"
@@ -15,7 +35,7 @@ const myProjects = [
         projectImage: "./assets/images/portfolio/projectDayplanner.png",
         projectImageAlt: "Project screenshot",
         projectName: "Day Planner",
-        projectDetails: "As a daily worker, you need to manage your time; so you want a personal daily schedule that you can access easily.",
+        projectDetails: "As a daily worker,<br/>You need to manage your time,<br/>So you want an accessible schedule manager.",
         projectFeatures: ['See changing color for current hour', 'Save your schedule info', 'See current date'],
         projectTools: ['HTML/CSS', 'BS', 'JS', 'jQuery'],
         projectGithub: ""
@@ -25,7 +45,7 @@ const myProjects = [
         projectImage: "./assets/images/portfolio/projectPWMaker.png",
         projectImageAlt: "Project screenshot",
         projectName: "Random Password Generator",
-        projectDetails: "As a regular Web user, you need to secure your Web accounts; so you want a random and complex password combination.",
+        projectDetails: "As a regular Web user,<br/>You need to secure your Web accounts,<br/>So you want a random and complex password.",
         projectFeatures: ['Choose desired character types', 'Generate a random password'],
         projectTools: ["JS"],
         projectGithub: ""
@@ -63,7 +83,7 @@ for (let i = 0; i < myProjects.length - 1; i++) {
                     <div class="col-12 col-md-6">
                         <p>${myProjects[i].projectDetails}</p>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div id="featuresTools" class="col-12 col-md-6">
                         <div id="dropdown1">
                             <p>Features: <span id="dropdown10">See List</span></p>
                             <ul id="dropdownContent1${i}" class="dropdownContent1">
