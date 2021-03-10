@@ -29,21 +29,20 @@ main {
 /* This is the image of each article item. */
 #projectImage {
     position: relative; /* make image overlap other elements once hover */
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 170px;
     object-fit: cover;
     border-radius: 20px;
     padding: 0 0 0 0; /* top right bottom left */
     margin-left: auto;
     margin-right: auto;
-    opacity: 0.7;
+    opacity: 0.6;
     transition: width 1s, opacity 1s;
 }
 /* projectImages are made larger and more opaque upon hover*/
 #projectImage {transition-timing-function: ease;}
 #projectImage:hover {
-    width: 110%;
-    height: auto;
     opacity: 1;   
     object-fit: cover; 
 }
@@ -121,6 +120,6 @@ article {
     float: right;
 }
 
-#featuresTools {
+/* #featuresTools {
     padding-right: 250px;
-}
+} */

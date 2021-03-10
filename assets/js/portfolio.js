@@ -45,7 +45,7 @@ const myProjects = [
         projectImage: "./assets/images/portfolio/projectPWMaker.png",
         projectImageAlt: "Project screenshot",
         projectName: "Random Password Generator",
-        projectDetails: "As a regular Web user,<br/>You need to secure your Web accounts,<br/>So you want a random and complex password.",
+        projectDetails: "As a regular web user,<br/>You need to secure your Web accounts,<br/>So you want a random and complex password.",
         projectFeatures: ['Choose desired character types', 'Generate a random password'],
         projectTools: ["JS"],
         projectGithub: ""
